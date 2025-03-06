@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 const DESKTOP = 1590;
 const TABLET = 1280;
 const MOBILE = 768;
+const MOBILE_PLUS = 840;
 const LAPTOP = 1536;
 
 export function useBreakPoints() {
@@ -12,7 +13,8 @@ export function useBreakPoints() {
   const isLaptop = width < DESKTOP && width >= TABLET;
   const isTablet = width < TABLET && width >= MOBILE;
   const isMobile = width < MOBILE;
-  return { isDesktop, isLaptop, isTablet, isMobile };
+  const isMobilePlus = width < MOBILE_PLUS;
+  return { isDesktop, isLaptop, isTablet, isMobile, isMobilePlus };
 }
 
 function useWindowSize() {

@@ -13,11 +13,27 @@ export default {
         fadeIn: "4s fadeIn forwards",
         fadeOut: "4s fadeOut forwards",
         customRotate: "4s customRotate forwards",
+        customRotateV2: "8s customRotateV2 infinite",
       },
       transitionProperty: {
         TRANSLATE_OPACITY: "transform, opacity",
       },
       keyframes: {
+        customRotateV2: {
+          "0%": {
+            transform: "rotateX(0deg) translateY(0px) rotateZ(0deg)",
+          },
+          "30%": {
+            transform: "translateX(10px) translateY(20px) rotateZ(7deg)",
+          },
+          "70%": {
+            transform: "translateX(-10px) translateY(-10px) rotateZ(-5deg)",
+          },
+          "100%": {
+            transform: "rotateX(0deg) translateY(0px) rotateZ(0deg)",
+          },
+        },
+
         customRotate: {
           "0%": {
             opacity: "0.2",
@@ -76,6 +92,7 @@ export default {
       },
       colors: {
         BLACK_500: "#1A191D",
+        BLACK_250: "#302935",
         BLACK_400: "#1A191D",
         BLACK_450: "#201F25",
         BLACK_300: "#44434A",

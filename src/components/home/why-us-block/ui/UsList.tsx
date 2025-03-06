@@ -10,7 +10,7 @@ type Props = {
 };
 export function UsList() {
   return (
-    <ul className="w-[calc(100%+32px)] md:justify-center scrollbar-hide snap-x snap-mandatory ml-[-16px] gap-[8px] flex mb-[138px] overflow-x-scroll">
+    <ul className="w-[calc(100%+32px)] pr-[16px] mdPlus:pr-0 md:justify-center scrollbar-hide snap-x snap-mandatory ml-[-16px] gap-[8px] flex mb-[138px] overflow-x-scroll">
       <UsItem
         img={<PercentIcon />}
         title="Низкие комиссии"
@@ -33,7 +33,7 @@ export function UsList() {
 function UsItem(props: Props) {
   const { title, subTitle, img } = props;
   return (
-    <li className="px-[30px] md:mx-[10px] text-center flex max-w-[374px] md:py-[25px] flex-col items-center gap-y-[10px] md:gap-y-[15px] w-full last:mr-[16px] snap-center first:ml-[16px] min-w-[250px] min-h-[222px] rounded-[24px] py-[25px] border-[1px] border-BLACK_300">
+    <li className="px-[30px] md:mx-[10px] text-center flex max-w-[374px] md:py-[25px] flex-col items-center gap-y-[10px] md:gap-y-[15px] w-full snap-center first:ml-[16px] min-w-[250px] min-h-[222px] rounded-[24px] py-[25px] border-[1px] border-BLACK_300">
       <div
         style={{
           background:

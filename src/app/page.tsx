@@ -1,4 +1,6 @@
 import { CourseModuleMobile } from "@/components/course/CourseModuleMobile";
+import { GuaranteesBlock } from "@/components/home/guarantees-block/GuaranteesBlock";
+import { GuideBlock } from "@/components/home/guide-block/GuideBlock";
 import { ManagerBlock } from "@/components/home/manager-block/ManagerBlock";
 import { OfficeBlock } from "@/components/home/office-block";
 import { PrevieBlock } from "@/components/home/previe-block";
@@ -12,6 +14,8 @@ export default function Home() {
       <WhyUsBlock />
       <OfficeBlock />
       <ManagerBlock />
+      <GuaranteesBlock />
+      <GuideBlock />
     </>
   );
 }
