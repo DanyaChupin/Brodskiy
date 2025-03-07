@@ -12,9 +12,11 @@ export function GuaranteesBlock() {
       className="pb-[100px] max-width lg:pb-[137px]"
     >
       <NameSection
-        name="Гарантии"
+        name="Мы гарантируем вам..."
         isCenter
-        subTitle="Мы гордимся тем, что наши клиенты остаются довольными. Это и есть наша главная гарантия."
+        subTitle="Наши сотрудники всегда готовы решить любой из ваших запросов
+мы за индивидуальный подход ко всем...
+"
       />
 
       <ul className="overflow-x-scroll mdPlus:overflow-x-visible mdPlus:justify-between mdPlus:w-full mdPlus:p-0 w-[calc(100%+32px)] pr-[16px] snap-x snap-mandatory gap-x-[8px] mdPlus:gap-[18px] ml-[-16px] flex scrollbar-hide">

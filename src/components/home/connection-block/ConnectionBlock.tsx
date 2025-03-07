@@ -6,7 +6,7 @@ export function ConnectionBlock() {
       <section className="flex flex-col items-center mb-[100px] w-full relative z-30">
         <div className="max-w-[1200px] flex-col flex items-center mdPlus:flex-row justify-center mdPlus:justify-between w-full mdPlus:gap-[20px] lg:gap-[150px]">
           <div className="flex flex-col gap-[24px] text-center mb-[40px] mdPlus:mb-0 mdPlus:text-left">
-            <h5 className="text-[24px] leading-[28px] mdPlus:text-[32px] mdPlus:leading-[32px] lg:text-[36px] lg:leading-[41px]">
+            <h5 className="text-[24px] font-bold leading-[28px] mdPlus:text-[32px] mdPlus:leading-[32px] lg:text-[36px] lg:leading-[41px]">
               Первая оплата
               <br />
               инвойса - бесплатно!

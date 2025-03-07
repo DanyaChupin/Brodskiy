@@ -1,23 +1,30 @@
 import { moveTo } from "../../helpers/scrollAnimation";
-
-export function NavMenu() {
+type Props = {
+  closeMenu?: () => void;
+};
+export function NavMenu(props: Props) {
+  const { closeMenu } = props;
+  const onClick = (sectionId: string) => {
+    moveTo(sectionId);
+    if (closeMenu) closeMenu();
+  };
   return (
-    <nav className="flex items-center lg:gap-[32px] font-medium text-[14px] leading-[19px] ">
+    <nav className="flex font-bold h-[100px] md:h-fit items-center lg:gap-[32px] md:font-medium md:text-[14px] md:leading-[19px]">
       <button
-        onClick={() => moveTo("course-section")}
+        onClick={() => onClick("course-section")}
         className="px-[15px] lg:px-[30px]"
       >
         Курс
       </button>
       <button
-        onClick={() => moveTo("offices-section")}
+        onClick={() => onClick("offices-section")}
         className="px-[15px] lg:px-[30px]"
       >
         Офисы
       </button>
       <button
         className="px-[15px] lg:px-[30px]"
-        onClick={() => moveTo("guarantees-section")}
+        onClick={() => onClick("guarantees-section")}
       >
         Гарантии
       </button>

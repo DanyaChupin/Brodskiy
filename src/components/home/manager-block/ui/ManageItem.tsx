@@ -49,13 +49,13 @@ export function ManageItem(props: Props) {
   }, [inView, entry, idDot, isMobilePlus]);
   return (
     <li
-      className={`relative py-[16px] px-[25px] lg:p-[32px] overflow-hidden flex flex-col gap-y-[12px] lg:gap-[14px] xl:gap-[16px] rounded-[32px] first:ml-[16px] mdPlus:first:ml-0 w-full min-w-[340px] mdPlus:min-w-[unset] snap-center min-h-[200px] mdPlus:min-h-[unset] border-[1px] border-BLACK_250 ${className}`}
+      className={`relative py-[16px] px-[25px] lg:p-[32px] lg:py-[20px] xl:p-[32px] overflow-hidden flex flex-col gap-y-[12px] lg:gap-[14px] xl:gap-[16px] rounded-[32px] first:ml-[16px] mdPlus:first:ml-0 w-full min-w-[340px] mdPlus:min-w-[unset] snap-center min-h-[200px] mdPlus:min-h-[unset] border-[1px] border-BLACK_250 ${className}`}
     >
       <p className="text-[20px] leading-[23px] xl:text-[24px] mdPlus:text-[16px] lg:text-[20px] font-bold">
         {title}
       </p>
       <div ref={ref} className="left-1/2 top-0 w-[1px] h-full absolute" />
-      <p className="text-[16px] mdPlus:text-[13px] xl:text-[20px] xl:leading-[29px] text-WHITE_500 font-light">
+      <p className="text-[16px] mdPlus:text-[13px] xl:text-[18px] 2xl:text-[20px] xl:leading-[29px] text-WHITE_500 font-light">
         {subTitle}
       </p>
       {background}

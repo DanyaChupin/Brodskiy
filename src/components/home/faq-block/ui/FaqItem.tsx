@@ -24,7 +24,7 @@ export function FaqItem(props: Props) {
         className={`grid transition-[grid,opacity] duration-300 ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr] opacity-0 "}`}
       >
         <div className="min-h-0 px-[24px] overflow-hidden">
-          <p className="h-[100px]">{description}</p>
+          <p className="opacity-70 pb-[10px]">{description}</p>
         </div>
       </div>
     </div>

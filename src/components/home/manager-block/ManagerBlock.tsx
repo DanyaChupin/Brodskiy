@@ -4,6 +4,7 @@ import { NameSection } from "@/components/name-section";
 import { useBreakPoints } from "@/shared/hooks/useBreackPoints";
 import { PrimaryButton } from "@/shared/ui/buttons";
 import { DotItem } from "@/shared/ui/DotsItem";
+import { TG_LINK } from "@/shared/const/social";
 
 export function ManagerBlock() {
   const { isMobilePlus } = useBreakPoints();
@@ -12,7 +13,7 @@ export function ManagerBlock() {
       <NameSection
         name="Персональный менеджер"
         isCenter
-        subTitle="Mananger subtitle"
+        subTitle="Ваш партнер в решении финансовых задач"
       />
       <ul className="overflow-x-scroll mdPlus:max-h-[366px] xl:max-h-[523px] lg:max-h-[400px] mdPlus:w-full mdPlus:overflow-x-hidden w-[calc(100%+32px)] pr-[16px] pl-[16px] snap-x snap-mandatory gap-x-[8px] mdPlus:gap-[18px] ml-[-16px] mdPlus:flex-wrap mdPlus:flex-col mdPlus:ml-0 flex scrollbar-hide">
         <ManageItem
@@ -131,7 +132,7 @@ export function ManagerBlock() {
         </div>
       )}
       <div className="flex items-center justify-center mt-[26px]">
-        <PrimaryButton text="Связаться с менеджером" href="/" />
+        <PrimaryButton text="Связаться с менеджером" href={TG_LINK} />
       </div>
     </section>
   );

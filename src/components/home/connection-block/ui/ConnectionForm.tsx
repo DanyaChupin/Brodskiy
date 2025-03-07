@@ -1,6 +1,6 @@
 "use client";
 import axios from "axios";
-import { HTMLInputTypeAttribute, useState } from "react";
+import { HTMLInputTypeAttribute, useEffect, useState } from "react";
 import { RegisterOptions, useForm } from "react-hook-form";
 
 interface IPayloadConnectionForm {
@@ -36,6 +36,8 @@ export const sendNotification = async (payload: IPayloadConnectionForm) => {
 };
 export function ConnectionForm() {
   const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [isError, setIsError] = useState(false);
   const {
     register,
     handleSubmit,
@@ -48,14 +50,34 @@ export function ConnectionForm() {
   const onSubmit = async (data: IPayloadConnectionForm) => {
     setIsLoading(true);
     const res = await sendNotification(data);
-    console.log(res);
     if (res) {
       reset();
       setIsLoading(false);
+      setIsSuccess(true);
     } else {
+      setIsError(true);
       setIsLoading(false);
     }
   };
+
+  useEffect(() => {
+    const timeoutError = setTimeout(() => {
+      setIsError(false);
+      return () => {
+        clearTimeout(timeoutError);
+      };
+    }, 2000);
+  }, [isError]);
+
+  useEffect(() => {
+    const timeoutSucces = setTimeout(() => {
+      setIsSuccess(false);
+      return () => {
+        clearTimeout(timeoutSucces);
+      };
+    }, 2000);
+  }, [isSuccess]);
+
   return (
     <form
       className="flex flex-col w-full max-w-[525px] gap-y-[32px]"
@@ -87,7 +109,7 @@ export function ConnectionForm() {
         placeholder="@example"
         options={{
           required: { value: true, message: "Заполните обязательное поле" },
-          minLength: { value: 5, message: "Минимум 5 символов" },
+          minLength: { value: 6, message: "Минимум 5 символов" },
           pattern: {
             value: tgReg,
             message: "Коректный telegram @example",
@@ -114,7 +136,11 @@ export function ConnectionForm() {
         disabled={isLoading}
         className="px-[33px] mdPlus:self-start self-center w-fit disabled:text-WHITE_500 transition-colors duration-200 disabled:bg-BLACK_250 py-[14px] text-[14px] whitespace-nowrap lg:hover:shadow-lg active:shadow-lg leading-[20px] font-semibold relative z-30 rounded-[20px] bg-GRIN_500 text-black"
       >
-        Оставить заявку
+        {isSuccess
+          ? "Заявка оптправлена"
+          : isError
+            ? "Ошибка отправки формы"
+            : "Оставить заявку"}
       </button>
     </form>
   );

@@ -2,6 +2,7 @@ import { CourseMobuleDesktop } from "@/components/course";
 import { PrimaryButton } from "@/shared/ui/buttons";
 import { BigTitle, SubTitle } from "@/shared/ui/titles";
 import Image from "next/image";
+import { TG_LINK } from "@/shared/const/social";
 
 export function PrevieBlock() {
   return (
@@ -11,7 +12,7 @@ export function PrevieBlock() {
     >
       <div className="flex flex-col md:px-[40px] gap-[24px] md:gap-0">
         <BigTitle text="Brodskiy Exchange" />
-        <SubTitle text="Оплата инвойсов с самой низкой комиссией!" />
+        <SubTitle text="Оплата инвойсов и обмен криптовалют!" />
       </div>
       <div className="hidden animate-fadeIn z-20 md:block md:ml-[40px] md:mt-[30px]">
         <CourseMobuleDesktop />
@@ -42,7 +43,7 @@ export function PrevieBlock() {
         alt="coin"
       />
       <div className="mb-[40px] md:px-[40px] md:mt-auto">
-        <PrimaryButton text="Оплатить без комиссии" href="/" />
+        <PrimaryButton text="Оплатить без комиссии" href={TG_LINK} />
       </div>
       <div
         style={{

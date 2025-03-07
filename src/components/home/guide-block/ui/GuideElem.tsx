@@ -1,5 +1,6 @@
 import { PrimaryButton } from "@/shared/ui/buttons";
 import Image from "next/image";
+import { TG_LINK } from "@/shared/const/social";
 
 export function GuideElem() {
   return (
@@ -34,7 +35,7 @@ export function GuideElem() {
           <br /> свою первую сделку.
         </p>
         <div className="w-fit sm:mb-0 sm:mt-[24px]">
-          <PrimaryButton text="Подробнее" href="/" />
+          <PrimaryButton text="Подробнее" href={TG_LINK} />
         </div>
       </div>
     </div>
