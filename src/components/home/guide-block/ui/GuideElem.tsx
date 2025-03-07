@@ -29,7 +29,7 @@ export function GuideElem() {
         <p className="font-semibold mb-[16px] text-[24px] sm:text-[30px] sm:leading-[30px] lg:leading-[41px] lg:text-[36px]  leading-[28px] text-white">
           Гайд
         </p>
-        <p className="text-[14px] leading-[29px] mb-[24px] font-light text-pretty text-WHITE_500 sm:text-[18px] sm:leading-[22px] lg:text-[20px] lg:leading-[25px]">
+        <p className="text-[14px] leading-[29px] mb-[24px] font-light text-pretty text-WHITE_500 opacity-70 sm:text-[18px] sm:leading-[22px] lg:text-[20px] lg:leading-[25px]">
           Полностью покажем и расскажем, как провести
           <br /> свою первую сделку.
         </p>

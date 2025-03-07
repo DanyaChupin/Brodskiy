@@ -93,6 +93,7 @@ export default {
       colors: {
         BLACK_500: "#1A191D",
         BLACK_250: "#302935",
+        BLACK_200: "#211C25",
         BLACK_400: "#1A191D",
         BLACK_450: "#201F25",
         BLACK_300: "#44434A",

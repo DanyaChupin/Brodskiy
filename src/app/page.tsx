@@ -1,7 +1,10 @@
 import { CourseModuleMobile } from "@/components/course/CourseModuleMobile";
+import { DealBlock } from "@/components/home/deal-block/DealBlock";
+import { FaqBlock } from "@/components/home/faq-block/FaqBlock";
 import { GuaranteesBlock } from "@/components/home/guarantees-block/GuaranteesBlock";
 import { GuideBlock } from "@/components/home/guide-block/GuideBlock";
 import { ManagerBlock } from "@/components/home/manager-block/ManagerBlock";
+import { NetBlock } from "@/components/home/net-block/NetBlock";
 import { OfficeBlock } from "@/components/home/office-block";
 import { PrevieBlock } from "@/components/home/previe-block";
 import { WhyUsBlock } from "@/components/home/why-us-block";
@@ -16,6 +19,9 @@ export default function Home() {
       <ManagerBlock />
       <GuaranteesBlock />
       <GuideBlock />
+      <DealBlock />
+      <NetBlock />
+      <FaqBlock />
     </>
   );
 }

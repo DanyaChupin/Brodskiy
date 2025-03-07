@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { useBreakPoints } from "@/shared/hooks/useBreackPoints";
 
 export function CourseModuleMobile() {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const { isMobile } = useBreakPoints();
 
   const fetchToken = async () => {

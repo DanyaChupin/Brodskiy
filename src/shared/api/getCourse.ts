@@ -7,8 +7,9 @@ export const getToken = async () => {
       "https://garantex.org/api/v2/depth?market=usdtrub",
     );
     return data;
+    /*eslint-disable*/
+    // @ts-ignore
   } catch (e) {
-    console.log(e);
     return false;
   }
 };

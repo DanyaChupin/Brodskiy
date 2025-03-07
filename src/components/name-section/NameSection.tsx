@@ -1,6 +1,6 @@
 type Props = {
   name: string;
-  subTitle: string;
+  subTitle?: string;
 };
 export function NameSection(props: Props) {
   const { name, subTitle } = props;
@@ -9,9 +9,11 @@ export function NameSection(props: Props) {
       <h2 className="font-bold text-[24px] leading-[28px] md:text-[36px] md:leading-[41px]">
         {name}
       </h2>
-      <p className="text-[14px] leading-[17px] font-light text-center md:font-normal md:text-[20px] md:leading-[39px]">
-        {subTitle}
-      </p>
+      {subTitle && (
+        <p className="text-[14px] leading-[17px] font-light text-center md:font-normal md:text-[20px] md:leading-[39px]">
+          {subTitle}
+        </p>
+      )}
     </div>
   );
 }

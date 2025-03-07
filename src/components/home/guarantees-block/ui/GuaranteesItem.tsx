@@ -19,7 +19,6 @@ export function GuaranteesItem(props: Props) {
     const dotItem = document.getElementById(
       `${idDot}-dot-guarantees`,
     ) as HTMLDivElement;
-    console.log(dotItem);
     if (!dotItem) return;
     let timeout = null;
     if (inView) {
