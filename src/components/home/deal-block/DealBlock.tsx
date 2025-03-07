@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 export function DealBlock() {
   return (
     <section className="self-center mb-[132px] lg:mb-[240px]">
-      <NameSection name="Сделка в 2 этапа" />
+      <NameSection name="Сделка в 2 этапа" isCenter />
       <div className="flex flex-col gap-[31px] lg:flex-row lg:gap-[0px]">
         <DealElem
           step="01"

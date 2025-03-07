@@ -8,8 +8,12 @@ import { DotItem } from "@/shared/ui/DotsItem";
 export function ManagerBlock() {
   const { isMobilePlus } = useBreakPoints();
   return (
-    <section className="mb-[108px] lg:mb-[80px]">
-      <NameSection name="Персональный менеджер" subTitle="Mananger subtitle" />
+    <section className="pb-[108px] max-width lg:pb-[80px]">
+      <NameSection
+        name="Персональный менеджер"
+        isCenter
+        subTitle="Mananger subtitle"
+      />
       <ul className="overflow-x-scroll mdPlus:max-h-[366px] xl:max-h-[523px] lg:max-h-[400px] mdPlus:w-full mdPlus:overflow-x-hidden w-[calc(100%+32px)] pr-[16px] pl-[16px] snap-x snap-mandatory gap-x-[8px] mdPlus:gap-[18px] ml-[-16px] mdPlus:flex-wrap mdPlus:flex-col mdPlus:ml-0 flex scrollbar-hide">
         <ManageItem
           idDot="1"

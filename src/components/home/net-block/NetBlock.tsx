@@ -6,7 +6,7 @@ import { useState } from "react";
 export function NetBlock() {
   return (
     <section className="w-full mb-[64px] lg:mb-[240px]">
-      <NameSection name="Мы в сети" />
+      <NameSection name="Мы в сети" isCenter />
       <div className="flex flex-wrap justify-center gap-[30px] w-full">
         <NetItem
           className="w-[112.75px] h-[112.75px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px]"

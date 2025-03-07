@@ -7,9 +7,13 @@ import { useBreakPoints } from "@/shared/hooks/useBreackPoints";
 export function GuaranteesBlock() {
   const { isMobilePlus } = useBreakPoints();
   return (
-    <section className="mb-[100px] lg:mb-[137px]">
+    <section
+      id="guarantees-section"
+      className="pb-[100px] max-width lg:pb-[137px]"
+    >
       <NameSection
         name="Гарантии"
+        isCenter
         subTitle="Мы гордимся тем, что наши клиенты остаются довольными. Это и есть наша главная гарантия."
       />
 

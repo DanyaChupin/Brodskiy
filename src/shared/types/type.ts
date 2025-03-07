@@ -1,6 +1,7 @@
 export interface IPayloadCourse {
-  asks: ICourse[];
-  bids: ICourse[];
+  data: {
+    amount: string;
+  };
 }
 export interface ICourse {
   amount: string;

@@ -3,7 +3,7 @@ import { FaqItem } from "./ui/FaqItem";
 
 export function FaqBlock() {
   return (
-    <section className="self-center items-center flex flex-col mdPlus:gap-[50px] max-w-[1200px] mdPlus:justify-between mdPlus:flex-row w-full mb-[100px]">
+    <section className="self-center items-center flex flex-col mdPlus:gap-[50px] max-w-[1200px] mdPlus:justify-between mdPlus:flex-row w-full mb-[131px] lg:mb-[240px]">
       <h4 className="font-bold text-[24px] mb-[50px] leading-[28px] mdPlus:hidden">
         FAQ
       </h4>

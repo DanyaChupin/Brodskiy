@@ -12,10 +12,10 @@ export function CourseModuleMobile() {
   const fetchToken = async () => {
     setIsLoading(true);
     const res = await getToken();
-    if (res && res?.asks && res?.bids) {
+    if (res && res?.buy && res?.sall) {
       setCourse({
-        buy: res.asks[0].price,
-        sall: res.bids[0].price,
+        buy: res.buy,
+        sall: res.sall,
       });
       setIsLoading(false);
     }

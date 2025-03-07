@@ -1,17 +1,26 @@
-import Link from "next/link";
+import { moveTo } from "../../helpers/scrollAnimation";
 
 export function NavMenu() {
   return (
     <nav className="flex items-center lg:gap-[32px] font-medium text-[14px] leading-[19px] ">
-      <Link className="px-[15px] lg:px-[30px]" href="/">
+      <button
+        onClick={() => moveTo("course-section")}
+        className="px-[15px] lg:px-[30px]"
+      >
         Курс
-      </Link>
-      <Link className="px-[15px] lg:px-[30px]" href="/">
+      </button>
+      <button
+        onClick={() => moveTo("offices-section")}
+        className="px-[15px] lg:px-[30px]"
+      >
         Офисы
-      </Link>
-      <Link className="px-[15px] lg:px-[30px]" href="/">
+      </button>
+      <button
+        className="px-[15px] lg:px-[30px]"
+        onClick={() => moveTo("guarantees-section")}
+      >
         Гарантии
-      </Link>
+      </button>
     </nav>
   );
 }

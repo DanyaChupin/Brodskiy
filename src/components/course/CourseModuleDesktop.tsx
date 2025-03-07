@@ -7,15 +7,16 @@ import { Timer } from "./ui/timer/Timer";
 import { CourseDesktop } from "./ui/course-desktop/CourseDesktop";
 
 export function CourseMobuleDesktop() {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const { isMobile } = useBreakPoints();
+
   const fetchToken = async () => {
     setIsLoading(true);
     const res = await getToken();
-    if (res && res?.asks && res?.bids) {
+    if (res && res?.buy && res?.sall) {
       setCourse({
-        buy: res.asks[0].price,
-        sall: res.bids[0].price,
+        buy: res.buy,
+        sall: res.sall,
       });
       setIsLoading(false);
     }

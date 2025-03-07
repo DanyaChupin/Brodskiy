@@ -5,7 +5,10 @@ import Image from "next/image";
 
 export function PrevieBlock() {
   return (
-    <div className="pt-[120px] self-center relative overflow-hidden max-w-[1232px] flex mx-auto text-center md:text-left md:items-start items-center flex-col justify-between md:justify-normal bg-BLACK_500 min-h-[580px] rounded-b-[40px] rounded-br-none md:rounded-[40px] ml-[-16px] md:m-0 md:w-full w-[calc(100%+32px)] md:mb-[155px]">
+    <section
+      id="course-section"
+      className="pt-[120px] self-center relative overflow-hidden max-w-[1232px] flex mx-auto text-center md:text-left md:items-start items-center flex-col justify-between md:justify-normal bg-BLACK_500 min-h-[580px] rounded-b-[40px] rounded-br-none md:rounded-[40px] ml-[-16px] md:m-0 md:w-full w-[calc(100%+32px)] md:mb-[155px]"
+    >
       <div className="flex flex-col md:px-[40px] gap-[24px] md:gap-0">
         <BigTitle text="Brodskiy Exchange" />
         <SubTitle text="Оплата инвойсов с самой низкой комиссией!" />
@@ -53,6 +56,6 @@ export function PrevieBlock() {
         }}
         className="w-[calc(100%+130px)] absolute animate-pulse ease-in-out rounded-[50%] bottom-[-170px] opacity-50 right-[-140px] blur-xl md:right-[-380px] rotate-[-20deg] h-[350px] z-0"
       />
-    </div>
+    </section>
   );
 }

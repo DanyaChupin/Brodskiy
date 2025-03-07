@@ -1,4 +1,5 @@
 import { CourseModuleMobile } from "@/components/course/CourseModuleMobile";
+import { ConnectionBlock } from "@/components/home/connection-block/ConnectionBlock";
 import { DealBlock } from "@/components/home/deal-block/DealBlock";
 import { FaqBlock } from "@/components/home/faq-block/FaqBlock";
 import { GuaranteesBlock } from "@/components/home/guarantees-block/GuaranteesBlock";
@@ -22,6 +23,7 @@ export default function Home() {
       <DealBlock />
       <NetBlock />
       <FaqBlock />
+      <ConnectionBlock />
     </>
   );
 }

@@ -93,6 +93,8 @@ export default {
       colors: {
         BLACK_500: "#1A191D",
         BLACK_250: "#302935",
+        GRAY_800: "#635F66",
+        GRAY_700: "#3A363E",
         BLACK_200: "#211C25",
         BLACK_400: "#1A191D",
         BLACK_450: "#201F25",
@@ -100,6 +102,7 @@ export default {
         GRIN_500: "#4DB45F",
         WHITE_500: "#F3F2FA",
         WHITE_600: "#F5F5F5B2",
+        BLACK_600: "#000212",
         GRAY_400: "#E0E0E0",
       },
     },
