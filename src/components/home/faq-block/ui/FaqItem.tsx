@@ -15,9 +15,11 @@ export function FaqItem(props: Props) {
     <div className="rounded-[16px] w-full min-h-[52px] bg-BLACK_200">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex justify-between px-[24px] w-full py-[17px] items-center"
+        className="flex justify-between px-[24px] w-full text-left py-[17px] items-center"
       >
-        <p className="font-bold text-[16px] leading-[16px]">{title}</p>
+        <p className="font-bold text-[16px] whitespace-nowrap leading-[16px]">
+          {title}
+        </p>
         <ArrowIcon isOpen={isOpen} />
       </button>
       <div
